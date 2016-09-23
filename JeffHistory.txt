@@ -1,0 +1,145 @@
+    1  sudo apt-get update
+    2  sudo apt-get install git
+    3  sudo apt-get install gitk
+    4  mkdir
+    5  ls
+    6  mkdir IT490
+    7  ls
+    8  cd IT490
+    9  echo "# IT490Fall16" >> README.md
+   10  cat README.md
+   11  git init
+   12  git add README.md
+   13  ls -la
+   14  ls
+   15  echo "# IT490Fall16" >> README.md
+   16  cat README.md
+   17  git init
+   18  ls
+   19  git commit -m "first commit"
+   20  git config --global user.email "you@example.com"
+   21  git config --global user.email "jy277@njit.edu"
+   22  git config --global user.name "jy277"
+   23  git commit -m "first commit"
+   24  git remote add origin https://github.com/jy277/IT490Fall16.git
+   25  git push -u origin master
+   26  sudo apt-get install apache2
+   27  sudo apt-get upgrade
+   28  ls
+   29  sudo apt-get install  apache2
+   30  sudo apt-get install apache2
+   31  clear
+   32  sudo apt-get install apache2
+   33  clear
+   34  sudo apt-get install apache2
+   35  sudo
+   36  sudo apt-get install apache2
+   37  sudo apt-get install apache
+   38  sudo apt-get install apache2
+   39  clear
+   40  sudo apt-get install apache2
+   41  sudo dpkg --configure -a
+   42  sudo apt-get install apache2
+   43  sudo service apache2 start
+   44  cd /etc/apache2
+   45  l
+   46  ls
+   47  cd /sites-enabled
+   48  cd /sites-enabled/
+   49  cd /sites-enabled
+   50  cd  /sites-enabled
+   51  ls
+   52  cd sites-enabled/
+   53  ls
+   54  cd
+   55  sudo apt-get update
+   56  sudo apt-get upgrade
+   57  sudo apt-get install dkms
+   58  sudo apt-get install build-essential
+   59  sudo reboot
+   60  la
+   61  ls
+   62  clear
+   63  cd /etc/apache2
+   64  ls
+   65  cd sites-available/
+   66  ls
+   67  cat 000-default.conf 
+   68  sudo apt-get install vim
+   69  sudo vim 000-default.conf 
+   70  cd ../sites-enabled/
+   71  ls
+   72  cat 000-default.conf 
+   73  cd /var/www
+   74  ls
+   75  mkdir demo
+   76  sudo mkdir demo
+   77  cd demo/
+   78  cd
+   79  clear
+   80  cd /var/www/demo
+   81  ls
+   82  sudo vim index.html
+   83  clear
+   84  cd /etc/apache2
+   85  ls
+   86  cd sites-enabled/
+   87  ls
+   88  cat 000-default.conf 
+   89  ls /var/www
+   90  la
+   91  cd ../sites-available/
+   92  ls
+   93  sudo vim 000-default.conf 
+   94  cd ../sites-enabled/
+   95  ls
+   96  cat 000-default.conf 
+   97  clear
+   98  sudo apache2 reload
+   99  sudo service  apache2 reload
+  100  history
+  101  ls
+  102  cat 000-default.conf 
+  103  cd
+  104  cd /etc/apache2
+  105  ls
+  106  cd sites-available/
+  107  ls
+  108  cat 000-default.conf 
+  109  cd ../sites-enabled/
+  110  ls
+  111  cat 000-default.conf
+  112  ls
+  113  cd ../sites-available/
+  114  ls
+  115  history
+  116  git init
+  117  ls
+  118  cd Downloads
+  119  ls
+  120  cat login.html
+  121  q
+  122  git 
+  123  git push
+  124  git push login.html
+  125  history
+  126  git config --lglobal user.email "jy277@njit.edu"
+  127  git config --global user.email "jy277@njit.edu"
+  128  git push login.html
+  129  ls
+  130  clear
+  131  git add login.html
+  132  git commit -m "this is the login page"
+  133  git push
+  134  git status
+  135  cd
+  136  ls
+  137  cd IT490-Project/
+  138  ls
+  139  cd IT490Fall16/
+  140  ls
+  141  git status
+  142  git add login.html 
+  143  git commit -m "This is login page"
+  144  git push 
+  145  history > JeffHistory.txt
