@@ -1,129 +1,30 @@
 <html>
-<style>
 
-#home{
-margin:0  auto;
-}
-#login{
-    float:right;
-    margin: 20 auto;
-}
-#ligue1 {
-  display: inline-block;
-  float:left;
-  margin-left: 100px;
-  text-align: center;
-}
-
-#premier {
-    margin-left: 500px;
-    text-align: center;
-
-}
-
-#spain {
-  display: inline-block;
-  float:left;
-  margin-left: 100px;
-  text-align: center;
-
-}
-#germany {
-    margin-left: 500px;
-    text-align: center;
-
-}
-#champion {
-  display: inline-block;
-  float:left;
-  margin-left: 100px;
-  text-align: center;
-
-}
-#italian {
-    margin-left: 500px;
-    text-align: center;
-
-}
-a{
-    text-decoration: none;
-}
-
-a:hover, a:active{
-
-}
-a:link, a:visited{
-
-}
-
-body{
-    background-color: #fff;
-    color: #000305;
-    font-size: 87.5%;
-    font-family: Arial, 'Black';
-    text-align: left;
-    margin: 0 auto;
-    width: 70%;
-    clear: both;
-}
-
-.mainheader img{
-    margin: 3% 0;
-}
-.mainheader nav {
-    width: 98%;
-    background-color: #fff;
-    height: 30px;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-}
-.mainheader nav ul{
-    list-style: none;
-    margin: 0 auto;
-
-}
-
-.mainheader nav ul li{
-    float: left;
-    display: inline;
-    padding: 0px 70px;
-  word-wrap: normal;
-  display: inline-block;
-}
-.mainheader nav a:link, .mainheader nav a:visited{
-    color: #FFF;
-    display: inline-block;
-    padding: 10px;
-    height: 20px;
-}
-
-.mainheader nav a:hover, .mainheader nav a:active,
-.mainheader nav .active a:link, .mainheader nav .active a:visited{
-    background-color: #FFF;
-    text-shadow: none;
-}
-
-.mainheader nav ul li a {
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-}
-
-</style>
 <body>
+<link rel="stylesheet" href="index.css"/>
 
-<div id=login>
-<a href="loginP.html">Login or Signup</a>
+<div id=loginbutton>
+<a href="registration.html">Registration</a>
 </div>
+
+  <div class="container">
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <center><button type="submit">Login</button></center>
+
+  </div>
 
 <div id=home>
 <a href="index.html">
-<center><img alt="home" src="logo.jpg" width="500" height="250"></center>
+<center><img alt="home" src="logo.jpg" width="450" height="250"></center><br>
 </a>
 </div>
 
-<br><br>
+<br><br><br><br>
 <div id=ligue1>
 <h1> Ligue 1</h1>
 <a href="ligue.html">
@@ -151,7 +52,7 @@ body{
 </div>
 
 <div id=germany>
-<h1> Bundes Liga</h1>
+<h1> BundesLiga</h1>
 <a href="german.html">
 <img alt="german" src="german.png" width="300" height="300">
 
