@@ -71,15 +71,9 @@ button {
     text-align: center;
 
 }
-#champion {
-  display: inline-block;
-  float:left;
-  margin-left: 100px;
-  text-align: center;
 
-}
 #italian {
-    margin-left: 500px;
+    margin-left: 50px;
     text-align: center;
 
 }
