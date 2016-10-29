@@ -23,7 +23,32 @@
     display: inline-block;
     font-size: 16px;
 }
-
+#favteam{
+    position:absolute;
+    margin-top:-50px;
+    margin-left:575px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+label{
+    color: #4CAF50;
+    font-size:20px;
+  text-decoration: underline;
+}
+input{
+    background-color: #4CAF50;
+    color: black;
+    padding: 8px 25px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
 button {
     position:absolute;
     right:457px;
