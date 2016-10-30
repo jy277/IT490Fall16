@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Registration Form</title>
+  <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+<link rel="stylesheet" href="registration.css"/>
+
+    <?php
+ require('db.php');
+        <?php } ?>  
+    
+  <h1 class="register-title"> Registration</h1>
+  <form class="register" action="RPC_Client.php">
+    <div class="register-switch">
+      <input type="radio" name="sex" value="F" id="sex_f" class="register-switch-input" checked>
+      <label for="sex_f" class="register-switch-label">Female</label>
+      <input type="radio" name="sex" value="M" id="sex_m" class="register-switch-input">
+      <label for="sex_m" class="register-switch-label">Male</label>
+<script>
+function passwordcheck ()
+{
+	var pass1 =( document.getElementById("password").value )
+	var pass2 =( document.getElementById("password2").value )
+			
+	if (pass1 != pass2){
+	alert( "Passwords do not match")
+	document.getElementById("warn").innerHTML="Passwords do not match"}
+	
+}
+
+</script>
+
+    </div>
+      
+    <input type="User Name" class="register-input" placeholder="User Name" name="UserName">  
+    <input type="First Name" class="register-input" placeholder="First Name" name="FirstName">
+      
+    <input type="Last Name" class="register-input" placeholder="Last Name" name="LastName">
+      
+    <input type="Email" class="register-input" placeholder="Email address" name="Email">
+      
+    <input type="Password" class="register-input" placeholder="Password" id="password" name="Password">  
+    
+    <input type="Password" class="register-input" placeholder="Confirm Password" id="password2" required onblur="passwordcheck()">  
+      
+<span id="warn" style="color:black"></span><br><br> 
+
+    <input type="submit" value="Create Account" class="register-button">
+  </form>
+</body>
+</html>
