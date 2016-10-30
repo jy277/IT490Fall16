@@ -1,5 +1,57 @@
 <html>
+<script>
+function createRequestObject(){
+    var ro;
+    //Get name of browser
+    var browser = navigator.appName;
+    //Create browser-specific HTTP request object
+    if(browser == "Microsoft Internet Explorer")
+        ro = new ActiveXObject("Microsoft.XMLHTTP");  
+    else
+        ro = new XMLHttpRequest(); 
+    return ro;
+}
 
+var http = createRequestObject();
+//ajax requests
+function sendAjaxReq(x){
+    numRows = document.getElementById(x).name;
+    console.log(numRows);
+//  numCols = document.getElementById("Matches").name;
+//  console.log(numCols);
+        url= "submit_req.php?rows="+numRows+"&junk="+Math.random();
+//  url = "hel.php?rows="+numRows+"&cols="+numCols+"&junk="+Math.random();        
+    http.open('get', url);
+    http.onreadystatechange = handleAjaxResponse;
+    http.send(null);
+}
+
+
+//ajax requests
+function sendAjaxReqTS(){
+             console.log('PTS');
+        numRows = document.getElementById('PTS').name;
+        console.log(numRows);
+//      numCols = document.getElementById("Matches").name;
+//      console.log(numCols);
+        url= "submit_req.php?rows="+numRows+"&junk="+Math.random();
+//      url = "hel.php?rows="+numRows+"&cols="+numCols+"&junk="+Math.random();        
+        http.open('get', url);
+        http.onreadystatechange = handleAjaxResponse;
+        http.send(null);
+}
+
+
+//ajax response
+
+function handleAjaxResponse(){
+    if( http.readyState == 4 ){   
+        var response=http.responseText;
+        document.getElementById("output-div").innerHTML = response;
+    }
+}
+
+</script>
 <style>
 
 #home{
@@ -145,16 +197,14 @@ body{
 </a>
 </div>
 <nav><ul>
-<li class="active"><a href = "#"> Tables </a></li>
-<li><a href = "#"> Matches </a></li>
-<li><a href = "#"> Scores/Schedules </a></li>
-<li><a href = "#"> Top Scorers </a></li>
-<li><a href = "#"> Top Assists </a></li>
-<li><a href = "#"> Forum </a></li>
+<li class="active"><input type=button value=Table id=BundesligaTable name=BundesligaTable  onclick=sendAjaxReq('BundesligaTable')> Tables </input></li>
+<li><input type=button value=Matches id=BundesligaMatches name=BundesligaMatches onclick=sendAjaxReq('BundesligaMatches')> Matches </input></li>
+<li><input type=button value=TopScorerz id=BTS name=BTS onclick=sendAjaxReq('BTS')>TopScorerz</input></li>
+<li><input type=button value=Forum name=BundesligaForum id=BundesligaForum onclick = sendAjaxReq('BundesligaForum')> Forum </input></li>
+
 
 </ul></nav>
-
-
+<div id='output-div'></div>
 
 
 </html>
