@@ -1,5 +1,48 @@
 <html>
+<script>
+function createRequestObject(){
+        var ro;
+        //Get name of browser
+    var browser = navigator.appName;
+        //Create browser-specific HTTP request object
+    if(browser == "Microsoft Internet Explorer")
+                ro = new ActiveXObject("Microsoft.XMLHTTP");  
+    else
+                ro = new XMLHttpRequest(); 
+    return ro;
+}
 
+var http = createRequestObject();
+//ajax requests
+function sendAjaxReq(){
+
+        UserName = document.getElementById("UserName").value;
+	     Password=document.getElementById("Password").value;
+        console.log(UserName);
+        
+
+
+	     console.log(Password);
+	
+//      numCols = document.getElementById("Matches").name;
+//      console.log(numCols);
+        url= "login_client.php?UserName="+UserName+"&Password="+Password+"&junk="+Math.random();
+//      url = "hel.php?rows="+numRows+"&cols="+numCols+"&junk="+Math.random();        
+        http.open('get', url);
+        http.onreadystatechange = handleAjaxResponse;
+        http.send(null);
+}
+//ajax response
+
+function handleAjaxResponse(){
+    alert("I AM HEREEEE");
+        if( http.readyState == 4 ){   
+        var response=http.responseText;
+        document.getElementById("login-result").innerHTML = response;
+    }
+}
+
+</script>
 <body>
 <link rel="stylesheet" href="index.css"/>
 
@@ -9,15 +52,15 @@
 
 
   <div class="container">
-  <form action = "login_client.php">
+  <form action = "login_client.php" accept-charset=utf-8>
     <label><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <input type="text" placeholder="Enter Username" name="UserName" id="UserName" required>
 
     <label><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="password" placeholder="Enter Password" name="Password"  id="Password" required>
         
-    <center><button type="submit" value="submit">Login</button></center>
-
+    <center><button type="submit"  value="submit" >Login</button></center>
+	  <div id=login-result> </div>
   </div>
   </form>
 

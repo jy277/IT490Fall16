@@ -176,6 +176,10 @@ body{
     -moz-border-radius: 5px;
     -webkit-border-radius: 40px;
 } 
+#forum{
+    margin-left:600px;
+    margin-top:-29px;
+}
 </style>
 <body>
 
@@ -201,8 +205,11 @@ body{
 <li class="active"><input type=button value=Table id=SerieATable name=SerieATable  onclick=sendAjaxReq('SerieATable')> Tables </input></li>
 <li><input type=button value=Matches id=SerieAMatches name=SerieAMatches onclick=sendAjaxReq('SerieAMatches')> Matches </input></li>
 <li><input type=button value=TopScorerz id=STS name=STS onclick=sendAjaxReq('STS')>TopScorerz</input></li>
-<li><a href = "final_forum.php"><input type=button value=Forum name=SerieAForum id=SerieAForum onclick = sendAjaxReq('SerieAForum')>  </input></li>
-
+<div id =forum>
+<form action = final_forum.php>
+<li><input type=submit value=Forum name=SerieAForum id=SerieAForum onclick = sendAjaxReq('SerieAForum')>  </input></li>
+</form>
+</div>
 </ul></nav>
 <div id='output-div'></div>
 
