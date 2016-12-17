@@ -1,99 +1,147 @@
 <style>
 
+<style>
 #home{
     position: relative;
 }
 #home img{ 
     margin:10 auto;
     position: absolute;
-    top: 0px;
+    bottom: 240px;
     left: 0px;
 }
 
-#loginbutton{
-    float:right;
-    margin: 20 auto;
-    background-color: #4CAF50;
+h4{
+    color:grey;
+}
+#register{
+    background-color:#158399;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 20px 25px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    text-decoration: inherit;
+    display: flex;
+    width: 100px;
     font-size: 16px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    position: absolute;
+    right:25px;
+    top:25px;
+}
+#register:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(142, 217, 2, 1);
+
+}
+#loginhere{
+    background-color:158399;
+    border: none;
+    color: white;
+    padding: 20px 25px;
+    text-align: center;
+    text-decoration: inherit;
+    display: flex;
+    width: 140px;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    position: absolute;
+    right:250px;
+    top:25px;
+}
+#loginhere:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(142, 217, 2, 1);
+
+}
+button {
+    background-color:#158399;
+    border: none;
+    color: white;
+    padding: 20px 25px;
+    text-align: center;
+    text-decoration: inherit;
+    display: flex;
+    width: 200px;
+    margin:10px;
+    font-size: 16px;
+    margin-left: -20
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+
+}
+button:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(142, 217, 2, 1);
+}
+
+#userlogin{
+    position:relative;
+    left:-85px;
+    top:10px;
+}
+p{
+    font-size:20px;
+    color: grey;
+    font-weight:bold;
 }
 
 input[type=text], input[type=password] {
-    width: 35%;
-    padding: 5px 10px;
+    width: 19%;
+    padding: 10px 5px;
     display: inline-block;
-    border: 2px solid #ccc;
+    border: 5px solid #ccc;
     box-sizing: border-box;
-}
-
-button {
-    position:absolute;
-    right:457px;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: -50%;
-}
-
-.container {
-    margin-left:500px;
-    padding: 16px;
+    font-size:15px;
 }
 
 #zlatan{
   position: relative;
 }
 #zlatan img{
-  margin-left:300px;
+  margin-left:510px;
 }
-#login{
-    float:right;
-    margin: 20 auto;
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
+
+
 #ligue1 {
-  display: inline-block;
   float:left;
-  margin-left: 100px;
+  margin-left: 50px;
   text-align: center;
+  font-size:30px;
 }
 
 #premier {
-    margin-left: 500px;
+    float:left;
+    margin-left:50px;
     text-align: center;
+    font-size:30px;
 
 }
 
 #spain {
   display: inline-block;
   float:left;
-  margin-left: 100px;
+  margin-left:50px;
   text-align: center;
+    font-size:30px;
+
 
 }
 #germany {
-    margin-left: 500px;
-    text-align: center;
-
-}
-#italian {
+    float:left;
     margin-left: 50px;
     text-align: center;
+    font-size:30px;
+
+}
+
+#italian {
+    float:left;
+    margin-left: 50px;
+    text-align: center;
+    font-size:30px;
 
 }
 a{
@@ -101,20 +149,20 @@ a{
 }
 
 a:hover, a:active{
-
+    color:white;
 }
 a:link, a:visited{
 
 }
 
 body{
-    background-color: #fff;
-    color: #000305;
-    font-size: 87.5%;
+    background-image: url(homebk.png);
+    background-size: cover;
+    color: #000;
     font-family: Arial, 'Black';
     text-align: left;
     margin: 0 auto;
-    width: 70%;
+    width: 100%;
     clear: both;
 }
 
@@ -162,3 +210,6 @@ body{
 }
 
 </style>
+
+</style>
+
