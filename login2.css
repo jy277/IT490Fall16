@@ -1,0 +1,382 @@
+<style>
+
+#home{
+    position: relative;
+}
+#home img{ 
+    margin:10 auto;
+    position: absolute;
+    bottom: 240px;
+    left: 0px;
+}
+
+h4{
+    color:grey;
+}
+#refresh{
+     background-color:#475D68;
+    border: none;
+    color: white;
+    padding: 20px 25px;
+    text-align: center;
+    text-decoration: inherit;
+    display: flex;
+    width: 200px;
+    margin:10px;
+    font-size: 16px;
+    margin-left: -20
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    position:relative;
+    right:-200px;
+    top:-200px;
+}
+#refresh:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(227, 10, 10, 1);
+
+}
+#logoutbutton{
+    float:right;
+    margin: 20 auto;
+ background-color:#475D68;
+    border: none;
+    color: white;
+    padding: 20px 25px;
+    text-align: center;
+    text-decoration: inherit;
+    display: flex;
+    width: 50px;
+    margin:10px;
+    font-size: 16px;
+    margin-left: -20
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+#logoutbutton:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(227, 10, 10, 1);
+
+}
+#leagues{
+    position:absolute;
+ 
+}
+th{
+
+    background: linear-gradient(#606062, #28262b);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+
+
+tr{
+
+   
+  overflow: hidden;
+  
+}
+.table{
+
+background: #EFEFEF;
+  font: 1em/1.25 trebuchet ms, verdana, sans-serif;
+  color: #000;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 4em auto;
+  border-collapse: collapse;
+  min-width: 23em; width: 70%; max-width: 56em;
+  border-radius: .5em;
+  box-shadow: 0 0 .5em #000;
+    width:auto;
+  table-layout: fixed;
+
+    position:relative;
+    right:0px;
+    top:-170px;
+
+}
+.buts{
+    margin: 20 auto;
+ background-color:#555;
+    border: solid;
+    color: white;
+    padding: 20px 25px;
+    text-align: center;
+    text-decoration: inherit;
+    display: flex;
+    width: 200px;
+    margin:10px;
+    font-size: 16px;
+    margin-left: -20
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+.buts:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(227, 10, 10, 1);
+}
+
+
+#favteam{
+    position:absolute;
+    right:300px;
+    top:70px;
+ background-color:#475D68;
+    border: none;
+    color: white;
+    padding: 20px 25px;
+    text-align: center;
+    text-decoration: inherit;
+    display: flex;
+    width: 100px;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+#favteam:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(227, 10, 10, 1);
+
+}
+#favleagues{
+    background-color:#475D68;
+    color: white;
+    font-weight: bold;
+    padding: 14px 20px;
+    margin: 15px 32px;
+    position: absolute;
+    top:150px;
+    border: none;
+    cursor: pointer;
+    font-size:13px;
+    width:150px;
+}
+#favleagues:hover{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(227, 10, 10, 1);
+
+}
+#leagueName{
+    position:relative;
+    top:-150px;
+}
+#getTeamNames{
+        position:relative;
+    top:-150px;
+}
+#register{
+    background-color:  #475D68;
+    border: none;
+    color: black;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    position: absolute;
+    right:25px;
+    top:25px;
+}
+h2{
+    position:relative;
+    top:-100px;
+    color:white;
+}
+label{
+    position:relative;
+    top:-150px;
+    color: #FFF;
+    font-size:20px;
+    font-weight:bold;
+  text-decoration: underline;
+}
+input{
+    background-color: #4D636E;
+    color: black;
+    padding: 8px 25px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+button {
+    background-color:#475D68;
+    border: none;
+    color: white;
+    padding: 20px 25px;
+    text-align: center;
+    text-decoration: inherit;
+    display: flex;
+    width: 200px;
+    margin:10px;
+    font-size: 16px;
+    margin-left: -20
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+
+}
+button:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(227, 10, 10, 1);
+}
+
+#userlogin{
+    position:relative;
+    left:-85px;
+    top:10px;
+}
+p{
+    font-size:20px;
+    color: grey;
+    font-weight:bold;
+}
+
+input[type=text], input[type=password] {
+    width: 19%;
+    padding: 10px 5px;
+    display: inline-block;
+    border: 5px solid #ccc;
+    box-sizing: border-box;
+    font-size:15px;
+}
+
+th{
+
+color: white;
+text-align:center;
+
+}
+
+td {
+
+color: black;
+text-align:center;
+
+}
+#ligue1 {
+    position:relative;
+  float:left;
+  top:-250px;
+  margin-left: 50px;
+  text-align: center;
+  font-size:30px;
+}
+
+#premier {
+    position:relative;
+    top:-250px;
+    float:left;
+    margin-left:50px;
+    text-align: center;
+    font-size:30px;
+
+}
+
+#spain {
+        position:relative;
+    top:-250px;
+  display: inline-block;
+  float:left;
+  margin-left:50px;
+  text-align: center;
+    font-size:30px;
+
+
+}
+#germany {
+        position:relative;
+    top:-250px;
+    float:left;
+    margin-left: 50px;
+    text-align: center;
+    font-size:30px;
+
+}
+
+#italian {
+        position:relative;
+    top:-250px;
+    float:left;
+    margin-left: 50px;
+    text-align: center;
+    font-size:30px;
+
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+
+a:hover, a:active{
+    color:white;
+}
+a:link, a:visited{
+
+}
+
+
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #000;
+    font-family: Arial, 'Black';
+    text-align: left;
+    margin: 0 auto;
+    width: 100%;
+    clear: both;
+}
+html { 
+  background: url(profilebk5.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.mainheader img{
+    margin: 3% 0;
+}
+.mainheader nav {
+    width: 98%;
+    background-color: #fff;
+    height: 30px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.mainheader nav ul{
+    list-style: none;
+    margin: 0 auto;
+
+}
+
+.mainheader nav ul li{
+    float: left;
+    display: inline;
+    padding: 0px 70px;
+  word-wrap: normal;
+  display: inline-block;
+}
+.mainheader nav a:link, .mainheader nav a:visited{
+    color: #FFF;
+    display: inline-block;
+    padding: 10px;
+    height: 20px;
+}
+
+.mainheader nav a:hover, .mainheader nav a:active,
+.mainheader nav .active a:link, .mainheader nav .active a:visited{
+    background-color: #FFF;
+    text-shadow: none;
+}
+
+.mainheader nav ul li a {
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+
+
+</style>
