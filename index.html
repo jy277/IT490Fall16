@@ -1,74 +1,117 @@
 <html>
+  <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+<script>
+function createRequestObject(){
+        var ro;
+        //Get name of browser
+    var browser = navigator.appName;
+        //Create browser-specific HTTP request object
+    if(browser == "Microsoft Internet Explorer")
+                ro = new ActiveXObject("Microsoft.XMLHTTP");  
+    else
+                ro = new XMLHttpRequest(); 
+    return ro;
+}
 
+var http = createRequestObject();
+//ajax requests
+function sendAjaxReq(){
+
+        UserName = document.getElementById("UserName").value;
+	     Password=document.getElementById("Password").value;
+        console.log(UserName);
+        
+
+
+	     console.log(Password);
+	
+//      numCols = document.getElementById("Matches").name;
+//      console.log(numCols);
+        url= "login_client.php?UserName="+UserName+"&Password="+Password+"&junk="+Math.random();
+//      url = "hel.php?rows="+numRows+"&cols="+numCols+"&junk="+Math.random();        
+        http.open('get', url);
+        http.onreadystatechange = handleAjaxResponse;
+        http.send(null);
+}
+//ajax response
+
+function handleAjaxResponse(){
+    alert("I AM HEREEEE");
+        if( http.readyState == 4 ){   
+        var response=http.responseText;
+        document.getElementById("login-result").innerHTML = response;
+    }
+}
+
+</script>
 <body>
 <link rel="stylesheet" href="index.css"/>
 
-<div id=loginbutton>
+
+
+<div id=userlogin>
+  <div class="container">
+  <form action = "login_client.php" accept-charset=utf-8>
+    <h4><label><b>Username</b></label></h4>
+    <input type="text" placeholder="Enter Username " name="UserName" id="UserName" required>
+<br>
+    <h4><label><b>Password</b></label></h4>
+    <input type="password" placeholder="Enter Password " name="Password"  id="Password" required>
+    <br>
+    <left><button type="submit"  value="submit" >Login</button></left>
+
+     </div>
+      <div id=login-result> </div>
+  </div>
+  </form>
+  <div id=register>
 <a href="registration.html">Registration</a>
 </div>
 
-
-  <div class="container">
-  <form action = "login_client.php">
-    <label><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-
-    <label><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-        
-    <center><button type="submit" value="submit">Login</button></center>
-
-  </div>
-  </form>
-
-<div id=home>
+<!--<div id=home>
 <a href="index.html">
-<center><img alt="home" src="logo.jpg" width="450" height="250"></center><br>
+<center><img alt="home" src="logo2.png" width="300" height="200"></center><br>
 </a>
 </div>
+-->
 
 <br><br><br><br>
 <div id=ligue1>
-<h1> Ligue 1</h1>
-<a href="ligue.html">
-<img alt="french" src="frenchligue.jpg" width="300" height="300">
 
+<img alt="french" src="frenchligue.jpg" width="150" height="150">
+<center><a href="ligue1.html"><button>Ligue 1</button>
 </a>
 </div>
 
 <div id=premier>
-<h1> Premier League</h1>
-<a href="premier.html">
-<img alt="england" src="premier.jpg" width="300" height="300">
+<img alt="england" src="premierlogo.png" width="150" height="150">
+<center><a href="PL.html"><button>Premier League</button>
 
 </a>
 </div>
 
-<br><br>
-<br><br>
+
 <div id=spain>
-<h1> La Liga</h1>
-<a href="laliga.html">
-<img alt="spain" src="spain.png" width="300" height="300">
+<img alt="spain" src="spain.png" width="150" height="150">
+<center><a href="laligafinaltrial.html"><button>La Liga</button>
 
 </a>
 </div>
 
 <div id=germany>
-<h1> BundesLiga</h1>
-<a href="german.html">
-<img alt="german" src="german.png" width="300" height="300">
-
+<img alt="german" src="german.png" width="150" height="150">
+<center><a href="bundesliga.html"><button>Bundes Liga</button>
 </a>
 </div>
 
-<br><br>
-<br><br>
 
 <div id=italian>
-<h1> Serie A</h1>
-<a href="italian.html">
-<img alt="italian" src="italian-league.jpg" width="300" height="300">
+<img alt="italian" src="italian.png" width="150" height="150">
+<center><a href="italian.html"><button>Serie A</button>
 
 </a>
 </div>
