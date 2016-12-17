@@ -29,8 +29,8 @@ function sendAjaxReq(x){
 
 //ajax requests
 function sendAjaxReqTS(){
-             console.log('STS');
-        numRows = document.getElementById('STS').name;
+             console.log('ETS');
+        numRows = document.getElementById('ETS').name;
         console.log(numRows);
 //      numCols = document.getElementById("Matches").name;
 //      console.log(numCols);
@@ -53,17 +53,18 @@ function handleAjaxResponse(){
 
 </script>
 <style>
-   
+
     #output-div{
     position:relative;
-    bottom:370px;
+    bottom:380px;
     left:160px;
     overflow: auto;
     width:1000px;
 max-height: 100vh;
+
 }
 
-
+    
     #RF{
         margin-top: -220px;
         margin-left: -200;
@@ -72,7 +73,8 @@ max-height: 100vh;
     }    
     
 body{
-    background-image:url("italy1.jpg");
+    background-image:url("pl.jpg");
+    background-position: 1px,500px;
     background-size:cover;
     background-position:bottom;
     background-attachment: fixed;
@@ -92,9 +94,9 @@ body{
     background-color:003333;
     margin-left: -190px;
     }
-    
-    .button {
-    background-color:003333;
+
+ .button {
+    background-color: 003333;
     border: none;
     color: white;
     padding: 35px 32px;
@@ -106,21 +108,17 @@ body{
     font-size: 16px;
     margin-left: -20
     cursor: pointer;
-    -webkit-transition-duration: 0.4s; 
+    -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
-    }
-    
+}
+       
 .leagues {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(126, 228, 68, 1);
 }
 
 .leagues2:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(126, 228, 68, 1);
-}      
-    .Leagues:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
-    
+}  
 ul {
     list-style-type: none;
     margin: 10;
@@ -174,39 +172,59 @@ li.dropdown {
     display: block;
 }
     
+    .Matches {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 250px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 100px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    }
+    
+    .Leagues:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+} 
 
 </style>
-
+    
 <body>
 <div id=RF>
-    <img alt="RF" src ="Juventus.png"width="50" height="50">
-    <img alt="RB" src="AC_Milan.png" width="50" height="50">
-    <img alt="atl" src="Inter_Milan.png" width="50" height="50">
-    <img alt="atl" src="AS_Roma_logo.png" width="50" height="50">
-    <img alt="atl" src="S.S.C._Napoli_logo.png" width="50" height="50">
-    <img alt="atl" src="ACF_Fiorentina.png" width="50" height="50">
-    <img alt="atl" src="torino.png" width="50" height="50">    
-    <img alt="atl" src="AtalantaBC.png" width="50" height="50">
-    <img alt="atl" src="Sampdoria_badge.png" width="50" height="50">
-    <img alt="atl" src="Genoa_cfc.png" width="50" height="50">
-    <img alt="atl" src="US_Sassuolo_Calcio_logo.png" width="50" height="50">
-    <img alt="atl" src="Cagliari_Calcio_.png" width="50" height="50">
-    <img alt="atl" src="Udinese_calcio.png" width="50" height="50">
-    <img alt="atl" src="AC_Cesena.png" width="50" height="50">
-    <img alt="atl" src="bo.png" width="50" height="50">
-    <img alt="atl" src="FC_Crotone_Logo.png" width="50" height="50">
-    <img alt="atl" src="US_Citt%C3%A0_di_Palermo_Logo.png" width="50" height="50">
-    <img alt="atl" src="Empoli_FC_.png" width="50" height="50">
-    <img alt="atl" src="Pescara_stemma.png" width="50" height="50">
-    <img alt="atl" src="parma.png" width="50" height="50">
-    <img alt="atl" src="AC_Cesena.png" width="50" height="50">
-    <img alt="atl" src="liv.png" width="50" height="50">
-
+    <img alt="RF" src ="Manchester.png" width="50" height="50">
+    <img alt="RB" src="Chelsea_FC.png" width="50" height="50">
+    <img alt="atl" src="liverpool.png" width="50" height="50">
+    <img alt="atl" src="Arsenal_FC.png" width="50" height="50">
+    <img alt="atl" src="Manchester_City_FC_badge.png" width="50" height="50">
+    <img alt="atl" src="519px-Tottenham_Hotspur.png" width="50" height="50">
+    <img alt="atl" src="leicester.png" width="50" height="50">    
+    <img alt="atl" src="Everton_FC_logo.png" width="50" height="50">
+    <img alt="atl" src="West_Ham_United_FC.png" width="50" height="50">
+    <img alt="atl" src="sunderland.png" width="50" height="50">
+    <img alt="atl" src="Watford.png" width="50" height="50">
+    <img alt="atl" src="Newcastle_United_Logo.png" width="50" height="50">
+    <img alt="atl" src="Swansea.png" width="50" height="50">
+    <img alt="atl" src="stoke-city.png" width="50" height="50">
+    <img alt="atl" src="Stoke_City_FC.png" width="50" height="50">
+    <img alt="atl" src="West_Bromwich_Albion.png" width="50" height="50">
+    <img alt="atl" src="FC_Southampton.png" width="50" height="50">
+    <img alt="atl" src="Crystal_Palace_FC_logo.png" width="50" height="50">
+    <img alt="atl" src="AFC_Bournemouth.png" width="50" height="50">
+    <img alt="atl" src="Burnley_FC_badge.png" width="50" height="50">
+    <img alt="atl" src="Middlesbrough_FC_crest.png" width="50" height="50">
+    <img alt="atl" src="Hull_City.png" width="50" height="50">
+    <img alt="atl" src="norwich.png" width="50" height="50">
+    <img alt="atl" src="Fulham.png" width="50" height="50">
+    <img alt="atl" src="Cardiff.png" width="50" height="50">
     
 </div>     
 <ul>
     <li><a href="profile.php">Home</a></li>
-  <li><a href = "final_forum.php"><id=SerieAForum name=SerieAForum onclick=sendAjaxReq('SerieAForum')>Forum</input>  </a></li>  
+  <li><a href = "final_forum.php"><id=PremierForum  name=PremierForum  onclick=sendAjaxReq('PremierForum ')>Forum</input>  </a></li>  
    <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Leagues</a>
     <div class="dropdown-content">
@@ -218,7 +236,8 @@ li.dropdown {
 
         
         </li>
-        <li><a href="https://beinsportsconnect.tv/index.html">Watch Now</a></li>    
+
+        <li><a href="http://www.nbcsports.com/live/">Watch Now</a></li>    
     
     </div>
 </ul>
@@ -226,17 +245,16 @@ li.dropdown {
        
   
 <div id=rectangle>
-<center><img alt="spain" src="seria%20a.png" width="150" height="150"></center>
+<center><img alt="spain" src="Premier%20League.png" width="150" height="150"></center>
 
-<button class="button leagues2"  id=SerieATable  name=SerieATable  onclick=sendAjaxReq('SerieATable')>Tables </button>
+<button class="button leagues2" id=PremierTable name=PremierTable  onclick=sendAjaxReq('PremierTable')>Tables </button>
     
-<button class="button leagues2" id=SerieAMatches name=SerieAMatches onclick=sendAjaxReq('SerieAMatches')>Matches </button>
+<button class="button leagues2"  id=PremierMatches name=PremierMatches onclick=sendAjaxReq('PremierMatches')>Matches </button>
     
-<button class="button leagues2" id=STS  name=STS   onclick=sendAjaxReqTS('STS')>Top Scorers </button>     
+<button class="button leagues2"  id=ETS name=ETS  onclick=sendAjaxReqTS('ETS')>Top Scorers </button>     
     
 <div id='output-div'></div>
 
 </div>   
 </html>
-</body>     
-    
+</body> 
